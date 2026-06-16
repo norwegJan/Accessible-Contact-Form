@@ -169,7 +169,7 @@ input[type="email"].email-input {
   width: 100%;
   height: 51px;
   padding: 12px 24px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--grey-900);
   border: var(--grey-500) solid 1px;
   border-radius: 8px;
@@ -243,7 +243,7 @@ input[type="radio"].query-input:checked {
   padding: 12px 24px;
   border: var(--grey-500) solid 1px;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .checkbox-wrapper {
@@ -305,6 +305,7 @@ input[type="checkbox"].consent-input:checked {
   background-color: var(--grey-900);
   padding: 24px;
   border-radius: 12px;
+  transform: translateY(-500px);
 }
 
 .success-container p,
@@ -319,8 +320,56 @@ input[type="checkbox"].consent-input:checked {
   align-items: center;
 }
 
+.back-btn {
+  background-color: var(--green-200);
+  padding: 0.5rem;
+  width: 45%;
+  border-radius: 8px;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+
+.back-btn:hover,
+.back-btn:focus-visible {
+  background-color: var(--grey-500);
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="checkbox"]:hover,
+.query-input-label:hover,
+textarea:hover {
+  border-color: var(--green-600);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+.query-input-label:focus-within,
+textarea:focus-visible,
+.consent-input-label:focus-within {
+  outline: 3px solid var(--green-600);
+  outline-offset: 3px;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--green-600);
+  outline-offset: 3px;
+  background-color: hsl(169, 83%, 14%);
+}
+
 .error-msg {
   color: var(--red-error);
+}
+
+input[type="text"].error,
+input[type="email"].error,
+textarea.error {
+  border-color: var(--red-error);
 }
 
 /* ===== FOOTER ===== */
@@ -360,6 +409,8 @@ input[type="checkbox"].consent-input:checked {
   }
 }
 
+/* ===== DESKTOP ===== */
+
 @media (min-width: 1024px) {
   .main-form {
     max-width: 750px;
@@ -370,4 +421,8 @@ input[type="checkbox"].consent-input:checked {
 
 .hidden {
   display: none;
+}
+
+.blur {
+  filter: blur(3px);
 }
