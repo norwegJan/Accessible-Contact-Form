@@ -1,6 +1,6 @@
 # Frontend Mentor - Accessible Contact form
 
-![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
+![Work in progress!](./assets/images/work-in-progress.png)
 
 ## Welcome! 👋
 

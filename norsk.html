@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
 
-    <title>Frontend Mentor | Accessible Contact form</title>
+    <title>Frontend Mentor | Kontaktskjema</title>
   </head>
   <body>
     <main>
@@ -26,13 +26,12 @@
         method="get"
         novalidate
       >
-        <h1>Contact Us</h1>
+        <h1>Kontakt Oss</h1>
 
         <div class="name-fields">
           <div class="input-wrapper">
             <label for="first-name"
-              >First Name
-              <span class="asterisk" aria-hidden="true">*</span></label
+              >Fornavn <span class="asterisk" aria-hidden="true">*</span></label
             >
             <input
               type="text"
@@ -46,7 +45,7 @@
 
           <div class="input-wrapper">
             <label for="last-name"
-              >Last Name
+              >Etternavn
               <span class="asterisk" aria-hidden="true">*</span></label
             >
             <input
@@ -62,7 +61,7 @@
 
         <div class="input-wrapper">
           <label for="email"
-            >Email Address
+            >E-postadresse
             <span class="asterisk" aria-hidden="true">*</span></label
           >
           <input
@@ -77,7 +76,7 @@
 
         <fieldset>
           <legend>
-            Query Type <span class="asterisk" aria-hidden="true">*</span>
+            Formål <span class="asterisk" aria-hidden="true">*</span>
           </legend>
 
           <div class="radio-inner-wrapper">
@@ -89,7 +88,7 @@
                 name="query"
                 required
                 autocomplete="off"
-              />General Enquiry</label
+              />Generell henvendelse</label
             >
 
             <label class="query-input-label" for="support-request"
@@ -100,7 +99,7 @@
                 name="query"
                 required
                 autocomplete="off"
-              />Support Request</label
+              />Supportforespørsel</label
             >
           </div>
 
@@ -109,7 +108,7 @@
 
         <div class="input-wrapper">
           <label for="message"
-            >Message <span class="asterisk" aria-hidden="true">*</span></label
+            >Beskjed <span class="asterisk" aria-hidden="true">*</span></label
           >
           <textarea id="message" class="message" required></textarea>
           <p class="error-msg"></p>
@@ -123,12 +122,12 @@
               class="consent-input"
               required
               autocomplete="off"
-            />I hereby consent to being contacted by the team<!-- <span class="asterisk" aria-hidden="true">*</span> --></label
+            />Jeg godtar med dette å bli kontaktet av teamet<!-- <span class="asterisk" aria-hidden="true">*</span> --></label
           >
           <p class="error-msg"></p>
         </div>
 
-        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+        <button type="submit" id="submit-btn" class="submit-btn">Send</button>
       </form>
 
       <div class="success-container hidden">
