@@ -49,3 +49,5 @@ function getConsent() {
   if (!consentInput.checked) return "NO";
   return consentInput.value;
 }
+
+console.log("Hey 👋");
